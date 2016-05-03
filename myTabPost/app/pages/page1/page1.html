@@ -1,0 +1,24 @@
+<ion-navbar primary *navbar>
+  <ion-title>Projects</ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+
+
+    <ion-list>
+            <button ion-item *ngFor="#post of posts" (click)="itemTapped($event, post)">
+                <p>{{post.dateCreated}}</p>
+                <p>Town: {{post.ct_town}}{{post.town}}</p>
+                <h4>{{post.description}}</h4>
+
+                <p>{{post.zipProject}}</p>
+
+
+            </button>
+        </ion-list>
+
+
+
+
+
+</ion-content>

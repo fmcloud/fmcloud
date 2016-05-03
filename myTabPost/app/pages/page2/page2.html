@@ -1,0 +1,36 @@
+
+<ion-navbar primary *navbar>
+  <ion-title>
+  My Forms
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="page2">
+
+  <ion-card>
+      <ion-card-header>
+      Enter New Project Details
+      </ion-card-header>
+      <ion-card-content>
+
+
+        <ion-list no-lines>
+
+          <form [ngFormModel]="myForm" (change)="saveForm()">
+
+          <ion-item>
+            <ion-label stacked>Project Description</ion-label>
+            <ion-input ngControl="description" type="text"></ion-input>
+          </ion-item>
+
+
+
+
+
+
+            </form>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
